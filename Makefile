@@ -28,12 +28,12 @@ clean:
 clean-data:
 	rm -f *.xlsx *.xlsm *.xlsb *.xls *.xml
 
-.PHONY: init
-init:
-	git submodule init
-	git submodule update
-	git submodule foreach git pull origin master
-	git submodule foreach make
+# .PHONY: init
+# init:
+# 	git submodule init
+# 	git submodule update
+# 	git submodule foreach git pull origin master
+# 	git submodule foreach make
 
 
 .PHONY: test mocha
